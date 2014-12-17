@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable:no;">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&amp;v=3"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
+        <script src="sm.js"></script>
+        <link rel="stylesheet" href="sm.css" type="text/css" />
+        <title>American Job Mapping 2014</title>
+    </head>
+    <body>
+        <div id="map-wrapper">
+            <div id="map">
+            </div>
+            <div id="controls" class="control">
+                <p> Job Category </p>
+                <select id="sign-select">
+                    <option value="">All Jobs</option>
+                    <option value="Category='Biotech /R&D /Science'">Biotech /R&D /Science</option>
+                    <option value="Category='Building Construction/ Skilled Trades'">Building Construction/ Skilled Trades</option>
+                    <option value="Category = 'Customer Support /Client Care'">Customer Support /Client Care</option>
+                    <option value="Category='Engineering'">Engineering</option>
+                    <option value="Category='Food Services/Hospitality'">Food Services/Hospitality</option>
+                    <option value="Category='Human Resources'">Human Resources</option>
+                    <option value="Category='Installation, Maintenance Repair search'">Installation, Maintenance Repair search</option>
+                    <option value="Category='Logistics/Transportation'">Logistics/Transportation</option>
+                    <option value="Category='Manufacturing, Production Operations'">Manufacturing, Production Operations</option>
+                    <option value="Category='Medical Health'">Medical Health</option>
+                    <option value="Category='Project Program Management'">Project Program Management</option>
+                    <option value="Category='Quality/Assurance /Safety'">Quality/Assurance /Safety</option>
+                    <option value="Category='Security/Protective Services'">Security/Protective Services</option>
+                    <option value="Category='Other'">Other</option>
+                </select>
+            </div>
+
+
+
+            <div id="controls1" class="control">
+                <p> State </p>
+                <select id="sign-select1" name="State">
+                        <option value="" selected="selected">Select a State</option> 
+                        <option value="State='AL'">Alabama</option> 
+                        <option value="State='AK'">Alaska</option> 
+                        <option value="State='AZ'">Arizona</option> 
+                        <option value="State='AR'">Arkansas</option> 
+                        <option value="State='CA'">California</option> 
+                        <option value="State='CO'">Colorado</option> 
+                        <option value="State='CT'">Connecticut</option> 
+                        <option value="State='DE'">Delaware</option> 
+                        <option value="State='DC'">District Of Columbia</option> 
+                        <option value="State='FL'">Florida</option> 
+                        <option value="State='GA'">Georgia</option> 
+                        <option value="State='HI'">Hawaii</option> 
+                        <option value="State='ID'">Idaho</option> 
+                        <option value="State='IL'">Illinois</option> 
+                        <option value="State='IN'">Indiana</option> 
+                        <option value="State='IA'">Iowa</option> 
+                        <option value="State='KS'">Kansas</option> 
+                        <option value="State='KY'">Kentucky</option> 
+                        <option value="State='LA'">Louisiana</option> 
+                        <option value="State='ME'">Maine</option> 
+                        <option value="State='MD'">Maryland</option> 
+                        <option value="State='MA'">Massachusetts</option> 
+                        <option value="State='MI'">Michigan</option> 
+                        <option value="State='MN'">Minnesota</option> 
+                        <option value="State='MS'">Mississippi</option> 
+                        <option value="State='MO'">Missouri</option> 
+                        <option value="State='MT'">Montana</option> 
+                        <option value="State='NE'">Nebraska</option> 
+                        <option value="State='NV'">Nevada</option> 
+                        <option value="State='NH'">New Hampshire</option> 
+                        <option value="State='NJ'">New Jersey</option> 
+                        <option value="State='NM'">New Mexico</option> 
+                        <option value="State='NY'">New York</option> 
+                        <option value="State='NC'">North Carolina</option> 
+                        <option value="State='ND'">North Dakota</option> 
+                        <option value="State='OH'">Ohio</option> 
+                        <option value="State='OK'">Oklahoma</option> 
+                        <option value="State='OR'">Oregon</option> 
+                        <option value="State='PA'">Pennsylvania</option> 
+                        <option value="State='RI'">Rhode Island</option> 
+                        <option value="State='SC'">South Carolina</option> 
+                        <option value="State='SD'">South Dakota</option> 
+                        <option value="State='TN'">Tennessee</option> 
+                        <option value="State='TX'">Texas</option> 
+                        <option value="State='UT'">Utah</option> 
+                        <option value="State='VT'">Vermont</option> 
+                        <option value="State='VA'">Virginia</option> 
+                        <option value="State='WA'">Washington</option> 
+                        <option value="State='WV'">West Virginia</option> 
+                        <option value="State='WI'">Wisconsin</option> 
+                        <option value="State='WY'">Wyoming</option>
+
+     </select>
+            </div>
+
+
+
+
+            <div id="controls2" class="control">
+                <p> Salary Range (yearly)</p>
+                <select id="sign-select2" name="salary">
+                        <option value="" selected="selected">All</option> 
+                        <option value="Salary >= 30000 AND Salary <= 40000">$30000-$40000</option> 
+                        <option value="Salary >= 40000 AND Salary <= 50000">$40000-$50000</option> 
+                        <option value="Salary >= 50000 AND Salary <= 60000">$50000-$60000</option> 
+                        <option value="Salary >= 60000 AND Salary <= 60000">$60000-$70000</option>
+                        <option value="Salary >= 70000 AND Salary <= 80000">$70000-$80000</option> 
+                        <option value="Salary >= 80000 AND Salary <= 90000">$80000-$90000</option>
+                        <option value="Salary >= 100000 AND Salary <= 100000000">$100000+</option> 
+                </select>
+            </div>
+
+<!--             <div id="controls2" class="control">
+
+                <input type="text" placeholder="zipcode">
+                <input type="submit" value="search">
+
+
+            </div> -->
+
+
+
+
+   <!--          <div id="notes">
+
+                <p>This is a map about American job (salary range is $30,000+) in 2014. <BR> Data is retrieved 
+                    from <a target="_blank" href="http://www.monster.com/">Monster.com</a>. Each "red dot" represents a job. 
+                    <BR>You can click "red dot" for detailed information of the job</p>
+
+
+
+            </div> -->
+       
+        </div>
+    </body>
+</html>
