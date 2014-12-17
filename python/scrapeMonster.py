@@ -3,7 +3,6 @@ import urllib2
 import re
 import csv
 import sys
-sys.path.append('/Users/Almightyeric/Desktop/python/BeautifulSoup')
 from bs4 import BeautifulSoup
 
 csvout = open("MonsterData.csv", "wb")

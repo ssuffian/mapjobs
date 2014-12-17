@@ -1,0 +1,9 @@
+we need to be able to narrow down the job types and even ‘clump’ together. Focus is good paying jobs for people with modest education (traditional ‘blue collar’ jobs).  Not menial jobs or minimum wage. Nor jobs requiring extensive education (e.g. computers).
+
+Need a ‘scale’.  A dot of one size means (for example) up to 25, 100 jobs (whatever).  Next size dot means more jobs.  At national view, would clump together so that there might be a huge dot over mid atlantic or something.
+
+As zoom in, more resolution down to eventually the specific jobs to within whatever degree of geographical detail the data can support.
+
+How hard to integrate multiple job resources, and ability to actually see the business at the indicated address?
+ 
+Also, for veterans, ability to map ‘job skills’ based upon military ratings to pre requisites or types of jobs applicants may be interested in?  
