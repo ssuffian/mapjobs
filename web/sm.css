@@ -53,6 +53,14 @@ html, body {
 
 }
 
+#controls3 {
+    
+    position: fixed;
+    top: 295px;
+    left: 10px;
+
+}
+
 #notes{
 
     position: fixed;

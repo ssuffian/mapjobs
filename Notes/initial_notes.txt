@@ -7,3 +7,13 @@ As zoom in, more resolution down to eventually the specific jobs to within whate
 How hard to integrate multiple job resources, and ability to actually see the business at the indicated address?
  
 Also, for veterans, ability to map ‘job skills’ based upon military ratings to pre requisites or types of jobs applicants may be interested in?  
+
+-35 minutes
+-6860 rows
+
+Here is what I have so far. Our intern Shengwei was building this on his own server. Here is a link to his latest version of the map:
+http://www.shengweizhao.com/Ameican_Job_Mapping_2014/
+
+Here is a link to his fusion table:
+https://www.google.com/fusiontables/DataSource?docid=1wOs5MF-tOJqxGqcUPX1c68fs9WZJlCjSmb7biaHZ#rows:id=1
+
